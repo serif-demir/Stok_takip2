@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BBF926DA-5A73-4649-B86E-E9BEE0806DDE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DembirStokTakip</RootNamespace>
+    <AssemblyName>DembirStokTakip</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CariDuzenleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CariDuzenleForm.Designer.cs">
+      <DependentUpon>CariDuzenleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DembirStokTakip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DembirStokTakip.Designer.cs">
+      <DependentUpon>DembirStokTakip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmYeniCari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYeniCari.Designer.cs">
+      <DependentUpon>frmYeniCari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StokDuzeltForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokDuzeltForm.Designer.cs">
+      <DependentUpon>StokDuzeltForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokForm.Designer.cs">
+      <DependentUpon>StokForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokGirisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokGirisForm.Designer.cs">
+      <DependentUpon>StokGirisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokKarti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokKarti.Designer.cs">
+      <DependentUpon>StokKarti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokTakipDatabaseDataSet.cs">
+      <DependentUpon>StokTakipDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StokTakipDatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StokTakipDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CariDuzenleForm.resx">
+      <DependentUpon>CariDuzenleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DembirStokTakip.resx">
+      <DependentUpon>DembirStokTakip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYeniCari.resx">
+      <DependentUpon>frmYeniCari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="StokDuzeltForm.resx">
+      <DependentUpon>StokDuzeltForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokForm.resx">
+      <DependentUpon>StokForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokGirisForm.resx">
+      <DependentUpon>StokGirisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokKarti.resx">
+      <DependentUpon>StokKarti.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="StokTakipDatabaseDataSet.xsc">
+      <DependentUpon>StokTakipDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StokTakipDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StokTakipDatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StokTakipDatabaseDataSet.xss">
+      <DependentUpon>StokTakipDatabaseDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
